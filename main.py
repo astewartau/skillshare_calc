@@ -12,7 +12,7 @@ def multiply(a, b):
 
 def divide(a, b):
     if b == 0:
-        return "Division by zero is not allowed!"
+        return "Division by zero is not allowed"
     return a / b
 
 def modulus(a, b):
@@ -38,7 +38,7 @@ def main():
     elif args.operation == "modulus":
         result = modulus(args.a, args.b)
 
-    print(f"Result (feature branch): {args.a} {args.operation} {args.b} = {result}")
+    print(f"Result (main branch): {args.a} {args.operation} {args.b} = {result}")
 
 if __name__ == "__main__":
     main()
