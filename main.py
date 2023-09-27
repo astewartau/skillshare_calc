@@ -21,9 +21,17 @@ def divide(a, b):
 def modulus(a, b):
     return a % b
 
+def factorial(a):
+    if a < 0:
+        return "Factorial of negative numbers is not allowed!"
+    elif a == 0:
+        return 1
+    else:
+        return a * factorial(a - 1)
+
 def main():
     parser = argparse.ArgumentParser(description="Perform arithmetic operations.")
-    parser.add_argument("operation", type=str, choices=["add", "subtract", "multiply", "divide", "modulus"],
+    parser.add_argument("operation", type=str, choices=["add", "subtract", "multiply", "divide", "modulus", "factorial"],
                         help="The arithmetic operation to perform.")
     parser.add_argument("a", type=float, help="First number")
     parser.add_argument("b", type=float, help="Second number")
@@ -40,6 +48,8 @@ def main():
         result = divide(args.a, args.b)
     elif args.operation == "modulus":
         result = modulus(args.a, args.b)
+    elif args.operation == "factorial":
+        result = factorial(args.a)
 
     print(f"Result (main branch): {args.a} {args.operation} {args.b} = {result}")
 
