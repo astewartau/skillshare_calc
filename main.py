@@ -34,7 +34,7 @@ def square(a):
 
 def main():
     parser = argparse.ArgumentParser(description="Perform arithmetic operations.")
-    parser.add_argument("operation", type=str, choices=["add", "subtract", "multiply", "divide", "modulus", "factorial"],
+    parser.add_argument("operation", type=str, choices=["add", "subtract", "multiply", "divide", "modulus", "factorial", "square"],
                         help="The arithmetic operation to perform.")
     parser.add_argument("a", type=float, help="First number")
     parser.add_argument("b", required=False, type=float, help="Second number")
@@ -53,6 +53,8 @@ def main():
         result = modulus(args.a, args.b)
     elif args.operation == "factorial":
         result = factorial(args.a)
+    elif args.operation == "square":
+        result = square(args.a)
 
     print(f"Result (main branch): {args.a} {args.operation} {args.b} = {result}")
 
