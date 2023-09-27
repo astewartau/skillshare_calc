@@ -38,3 +38,5 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+        echo MY SECRET API KEY IS ${{ secrets.MY_API_KEY }}
+
