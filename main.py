@@ -19,6 +19,8 @@ def divide(a, b):
     return a / b
 
 def modulus(a, b):
+    if b == 0:
+        return "Modulus by zero is not allowed"
     return a % b
 
 def factorial(a):
