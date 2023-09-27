@@ -29,6 +29,9 @@ def factorial(a):
     else:
         return a * factorial(a - 1)
 
+def square(a):
+    return a * a
+
 def main():
     parser = argparse.ArgumentParser(description="Perform arithmetic operations.")
     parser.add_argument("operation", type=str, choices=["add", "subtract", "multiply", "divide", "modulus", "factorial"],
