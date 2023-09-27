@@ -33,7 +33,7 @@ def main():
     elif args.operation == "divide":
         result = divide(args.a, args.b)
 
-    print(f"Result of {args.a} {args.operation} {args.b} = {result}")
+    print(f"Result: {args.a} {args.operation} {args.b} = {result}")
 
 if __name__ == "__main__":
     main()
