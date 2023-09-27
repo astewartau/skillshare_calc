@@ -1,5 +1,7 @@
 # main.py
 # A basic calculator program that performs arithmetic operations.
+# Author: Ashley Stewart
+
 import argparse
 
 def add(a, b):
