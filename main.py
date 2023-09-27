@@ -34,7 +34,7 @@ def main():
     parser.add_argument("operation", type=str, choices=["add", "subtract", "multiply", "divide", "modulus", "factorial"],
                         help="The arithmetic operation to perform.")
     parser.add_argument("a", type=float, help="First number")
-    parser.add_argument("b", type=float, help="Second number")
+    parser.add_argument("b", required=False, type=float, help="Second number")
 
     args = parser.parse_args()
 
