@@ -38,7 +38,7 @@ def main():
     elif args.operation == "modulus":
         result = modulus(args.a, args.b)
 
-    print(f"Result: {args.a} {args.operation} {args.b} = {result}")
+    print(f"Result (feature branch): {args.a} {args.operation} {args.b} = {result}")
 
 if __name__ == "__main__":
     main()
