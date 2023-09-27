@@ -1,4 +1,5 @@
 # main.py
+# A basic calculator program that performs arithmetic operations.
 import argparse
 
 def add(a, b):
